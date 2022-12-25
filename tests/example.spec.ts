@@ -58,3 +58,8 @@ test("Input test", async ({ page }) => {
   const loginErrorAlert = page.locator(".alert-error:visible")
   await expect(loginErrorAlert).toHaveText("Login and/or password are wrong.")
 })
+
+test("Custom helpers", async ({ page }) => {
+  await loadHomepage(page)
+  await assertTitle(page)
+})
