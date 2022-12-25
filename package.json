@@ -1,0 +1,21 @@
+{
+  "name": "playwright-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tests:chrome": "playwright test --config=playwright.config.ts --project=chromium",
+    "tests:ff": "playwright test --config=playwright.config.ts --project=firefox",
+    "tests:webkit": "playwright test --config=playwright.config.ts --project=webkit",
+    "tests:e2e": "playwright test e2e --config=e2e.config.ts --project=chromium"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.28.1"
+  },
+  "dependencies": {
+    "prettier": "^2.8.0"
+  }
+}
