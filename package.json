@@ -8,7 +8,9 @@
     "tests:ff": "playwright test --config=playwright.config.ts --project=firefox",
     "tests:webkit": "playwright test --config=playwright.config.ts --project=webkit",
     "tests:e2e": "playwright test e2e --config=e2e.config.ts --project=chromium",
-    "tests:ui": "playwright test e2e --config=e2e.config.ts --project=chromium --ui"
+    "tests:chrome-ui": "playwright test e2e --config=e2e.config.ts --project=chromium --ui",
+    "tests:ff-ui": "playwright test e2e --config=e2e.config.ts --project=firefox --ui",
+    "tests:webkit-ui": "playwright test e2e --config=e2e.config.ts --project=webkit --ui"
   },
   "keywords": [],
   "author": "",
